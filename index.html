@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+<!-- For Desktop View-->
+   <div class="layer-3 bg-darkblue position-fixed top-0 desktop" style="overflow: hidden;">
+        <div class="layer-2 pt-5">
+            <div class="layer-1 position-relative z-3">
+                <svg width="500px" height="500px" class="svg" 
+                    style="margin-left:333px; border-radius:50%;cursor: pointer;">
+                    <circle cx="250px" cy="250px" r="200" class="track"></circle>
+                    <circle cx="250px" cy="250px" r="200" class="progress"></circle>
+                    <circle cx="110px" cy="107px" r="7" class="dot-1" onclick="sliderOne()" type="button"></circle>
+                    <circle cx="260px" cy="51px" r="7"  class="dot-2" onclick="sliderTwo()" type="button"></circle>
+                    <circle cx="402px" cy="120px" r="7" class="dot-3" onclick="sliderThree()" type="button"></circle>
+                    <circle cx="448px" cy="275px" r="7" class="dot-4" onclick="sliderFour()" type="button"></circle>
+                    <circle cx="369px" cy="410px" r="7" class="dot-5" onclick="sliderFive()" type="button"></circle>
+                    <circle cx="230px" cy="448px" r="7" class="dot-6" onclick="sliderSix()" type="button"></circle>
+                    <circle cx="110px" cy="393px" r="7" class="dot-7" onclick="sliderSeven()" type="button"></circle>
+                </svg>
+                <div class="data position-absolute top-50 start-50 text-white"
+                style="margin-left: -250px;margin-top: -111px;z-index: 999;">
+                    <p class="optional" data-aos="flip-down"  data-aos-duration="1000">The Next Big</p>
+                    <p class="heading fw-bold" data-aos="flip-down"  data-aos-duration="1000">25M+ Downloads</p>
+                    <p class="fs-4 fw-normal subheading" style="margin-left: 180px;" data-aos="flip-up"  data-aos-duration="1000">on appstore and google playstore</p>
+                </div>
+                <div class="subdata position-fixed bottom-0 start-0 text-white ms-5 d-flex ">
+                    <div data-aos="fade-right"  data-aos-duration="1000">
+                        <p class="heading1 fw-bold">ABC 123</p>
+                        <p class="fs-5" style="width: 300px;">We are the best development company in the world</p>
+                        <p class="fs-5 pt-3" style="color: #aaa5a5;">Coming Soon →</p>
+                    </div>
+                </div>
+                <div class="skip text-white ps-5 pt-5 mt-auto float-end">
+                        <p class="fs-5"
+                        style="letter-spacing: 6px;cursor: pointer;margin-left: -300px;">SKIP</p>
+                    </div>
+            </div>
+        </div>
+        <div class="images position-absolute start-50 top-0">
+            <div class="imgBox position-relative">
+
+                <img src="./assets/img/slide4-pic2.png" alt="slide1-img1" 
+                class="slide1-img1 position-absolute top-0 end-0">
+                <img src="./assets/img/veme-blockchain-app-developed.png" alt="slide1-img2" 
+                class="slide1-img2 position-absolute">
+
+                <img src="./assets/img/nexgtv-entertainment-mobile-app-development.png" alt="slide2-img1" 
+                class="slide2-img1 position-absolute">
+                <img src="./assets/img/nexgtv-mobile-app-ui-design.png" alt="slide2-img2" 
+                class="slide2-img2 position-absolute">
+
+                <img src="./assets/img/pizza_box.png" alt="slide3-img1" 
+                class="slide3-img1 position-absolute">
+                <img src="./assets/img/ux-strategy-for-mobile-app-devlopment.png" alt="slide3-img2" 
+                class="slide3-img2 position-absolute">
+                <img src="./assets/img/domi-img1.png" alt="slide3-img3" 
+                class="slide3-img3 position-absolute">
+                <img src="./assets/img/dominos-bread.png" alt="slide3-img4" 
+                class="slide3-img4 position-absolute">
+                <img src="./assets/img/dominos-bread1.png" alt="slide3-img5" 
+                class="slide3-img5 position-absolute">
+
+                <img src="./assets/img/nasa-fitness-tracking-mobile-app.png" alt="slide4-img1" 
+                class="slide4-img1 position-absolute">
+                <img src="./assets/img/measure-total-body-weight-through-fitness-app.png" alt="slide4-img2" 
+                class="slide4-img2 position-absolute">
+
+                <img src="./assets/img/karavan-social-networking-app-screen.png" alt="slide5-img1" 
+                class="slide5-img1 position-absolute">
+                <img src="./assets/img/social-networking-app-case-study.png" alt="slide5-img2" 
+                class="slide5-img2 position-absolute">
+                <img src="./assets/img/developers-for-social-media-app.png" alt="slide5-img3" 
+                class="slide5-img3 position-absolute">
+                <img src="./assets/img/karavan-social-networking-app-screen-2.png" alt="slide5-img4" 
+                class="slide5-img4 position-absolute">
+                <img src="./assets/img/karavan_2.png" alt="slide5-img5" 
+                class="slide5-img5 position-absolute">
+
+                <img src="./assets/img/erp-app-development-service.png" alt="slide6-img1" 
+                class="slide6-img1 position-absolute">
+
+                <img src="./assets/img/melltoo-img2.png" alt="slide7-img1" 
+                class="slide7-img1 position-absolute">
+                <img src="./assets/img/melltoo-img1.png" alt="slide7-img2" 
+                class="slide7-img2 position-absolute">
+
+            </div>
+        </div>
+        <div class="contact position-fixed bottom-0 end-0 m-2" style="z-index: 999;">
+            <i class="fa-solid fa-message text-white bg-primary p-3 fs-3 rounded-circle contact-btn"></i>
+        </div>
+   </div>
+<!-- For Mobile View -->
+   <div class="mobile owl-carousel owl-theme" id="mobile-element">
+
+    <div class="item" id="item1" style="height: 100vh;">
+        <div class="upper-half bg-darkblue d-flex h-50">
+            <div class="w-30 m-2">
+                <img  src="./assets/img/veme-blockchain-app-developed.png" 
+                class="h-100 w-auto" style="margin-top: 90px;">
+            </div>
+            <div class="w-auto m-2">
+                <img  src="./assets/img/slide4-pic2.png" 
+                class="h-100 w-auto" style="margin-top: -50px;">
+            </div>
+        </div>
+        <div class="h-50 lower-half text-white bg-pink w-100 pt-5 p-md-4 p-3 position-relative">
+            <h1 class="pt-3">ABC 1</h1>
+            <h5>This is some sample text for ABC1</h5>
+            <h5>View Case Study → 
+                <span>
+                    <button class="btn" style="border-radius: 25px;background-color: #f35086;color: #fff;">Coming Soon</button>
+                </span>
+            </h5>
+        </div>
+    </div>
+
+    <div class="item" id="item1" style="height: 100vh;">
+        <div class="upper-half bg-darkblue d-flex h-50">
+            <div class="w-30 m-2">
+                <img  src="./assets/img/nasa-fitness-tracking-mobile-app.png" 
+                class="h-100 w-auto" style="margin-top: 100px;">
+            </div>
+            <div class="w-auto m-2">
+                <img  src="./assets/img/measure-total-body-weight-through-fitness-app.png" 
+                class="h-100 w-auto" style="margin-top: -100px;">
+            </div>
+        </div>
+        <div class="h-50 lower-half text-white bg-blue w-100 pt-5 p-md-4 p-3 position-relative">
+            <h1 class="pt-3">ABC 2</h1>
+            <h5>This is some sample text for ABC 2</h5>
+            <h5>Case Study → 
+                <span>
+                    <button class="btn" style="border-radius: 25px;background-color: #fff;color: #1b1a1a;">Coming Soon</button>
+                </span>
+            </h5>
+        </div>
+    </div>
+
+    <div class="item" id="item1" style="height: 100vh;">
+        <div class="upper-half bg-dark d-flex h-50">
+            <div class="w-30">
+                <span class="d-flex justify-content-between">
+                    <img  src="./assets/img/pizza_box.png" 
+                    class="w-auto" style="height: 60px;width: 60px;">
+                    <img  src="./assets/img/dominos-masala.png" 
+                    class="w-auto" style="height: 160px;width: 160px;margin-top: -30px;">
+                </span>
+                <img  src="./assets/img/domi-img1.png" 
+                class="h-100 w-auto" style="margin-top: -10px;">
+            </div>
+            <div class="w-auto m-2">
+                <img  src="./assets/img/ux-strategy-for-mobile-app-devlopment.png" 
+                class="h-100 w-auto" style="margin-top: -200px;">
+                <img  src="./assets/img/ux-strategy-for-mobile-app-devlopment.png" 
+                class="h-100 w-auto" style="margin-top: 30px;">
+            </div>
+            <div class="w-auto m-2">
+                <img  src="./assets/img/dominos-bread.png" 
+                class="h-100 w-auto" style="margin-top: -200px;">
+                <img  src="./assets/img/dominos-bread1.png" 
+                class="h-100 w-auto">
+            </div>
+        </div>
+        <div class="h-50 lower-half text-white bg-blue w-100 pt-5 p-md-4 p-3 position-relative">
+            <h1 class="pt-3">ABC 3</h1>
+            <h5>This is some sample text for ABC 3</h5>
+            <h5>View Case Study → </h5>
+        </div>
+    </div>
+
+    <div class="item" id="item1" style="height: 100vh;">
+        <div class="upper-half bg-marine d-flex h-50">
+            <div class="w-30">
+                <img  src="./assets/img/karavan-social-networking-app-screen.png" 
+                class="h-100 w-auto" style="margin-top: -250px;">
+                <img  src="./assets/img/karavan_2.png" 
+                class="h-100 w-auto" style="margin-top: 0px;">
+            </div>
+            <div class="w-auto">
+                <img  src="./assets/img/social-networking-app-case-study.png" 
+                class="h-100 w-auto" style="margin-top: -120px;">
+                <img  src="./assets/img/karavan-social-networking-app-screen-2.png" 
+                class="h-100 w-auto" style="margin-top: 0px;">
+            </div>
+            <div class="w-auto">
+                <img  src="./assets/img/developers-for-social-media-app.png" 
+                class="h-100 w-auto" style="margin-top: 200px;">
+            </div>
+        </div>
+        <div class="h-50 lower-half text-white bg-lightblue w-100 pt-5 p-md-4 p-3 position-relative">
+            <h1 class="pt-3">ABC 4</h1>
+            <h5>This is some sample text for ABC 4</h5>
+            <h5>View Case Study → </h5>
+        </div>
+    </div>
+
+    <div class="item" id="item1" style="height: 100vh;">
+        <div class="upper-half bg-orange d-flex h-50">
+            <div class="w-30 w-100">
+                <img src="./assets/img/erp-app-development-service.png" 
+                class="h-100 w-auto">
+            </div>
+        </div>
+        <div class="h-50 lower-half text-white bg-blue w-100 pt-5 p-md-4 p-3 position-relative">
+            <h1 class="pt-3">ABC 4</h1>
+            <h5>This is some sample text for ABC 4</h5>
+            <h5>View Case Study → </h5>
+        </div>
+    </div>
+
+    <div class="item" id="item1" style="height: 100vh;">
+        <div class="upper-half  bg-gray d-flex h-50">
+            <div class="w-30">
+                <img  src="./assets/img/nexgtv-entertainment-mobile-app-development.png" 
+                class="h-100 w-auto" style="margin-left: -20px;">
+            </div>
+            <div class="w-auto">
+                <img  src="./assets/img/nexgtv-mobile-app-ui-design.png" 
+                class="h-100 w-auto" style="margin-left: -20px;">
+            </div>
+        </div>
+        <div class="h-50 lower-half text-white bg-purple w-100 pt-5 p-md-4 p-3 position-relative">
+            <img src="./assets/img/world-communication-awards-for-best-digital-experience.png"
+            class="translate-middle position-absolute start-50 top-0" 
+            style="width: 200px;border: #7252da solid 2px;margin-left: -70px;">
+            <h1 class="pt-3">ABC 123</h1>
+            <h5>This is some sample text for ABC1</h5>
+            <h5>View Case Study →</h5>
+        </div>
+    </div>
+
+    <div class="item" id="item1" style="height: 100vh;">
+        <div class="upper-half  bg-lightgreen d-flex h-50">
+            <div class="w-30 m-2">
+                <img  src="./assets/img/melltoo-img2.png" 
+                class="h-100 w-auto" style="margin-top: 50px;">
+            </div>
+            <div class="w-auto">
+                <img  src="./assets/img/melltoo-img1.png" 
+                class="h-100 w-auto" style="margin-top: 100px;margin-left: -50px;">
+            </div>
+        </div>
+        <div class="h-50 lower-half text-white bg-green w-100 pt-5 p-md-4 p-3 position-relative">
+            <img src="./assets/img/mobile-app-of-the-year-by-entrepreneur.png"
+            class="translate-middle position-absolute start-50 top-0" 
+            style="width: 200px;margin-left: -70px;">
+            <h1 class="pt-3">XYZ 123</h1>
+            <h5>This is sample text for XYZ 123.</h5>
+            <h5>Case Study →
+                <span>
+                    <button class="btn" style="border-radius: 25px;background-color: #fff;color: #1b1a1a;">Coming Soon</button>
+                </span>
+            </h5>
+        </div>
+    </div>
+    
+   </div>
+<!-- Script links -->
+   <script src="./assets/js/script.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<!--Short Scripts -->
+   <script>
+    AOS.init();
+   </script>
+   <script>
+//owl carousel
+    $(document).ready(function() {
+        $(".owl-carousel").owlCarousel();
+        });
+
+        $('.owl-carousel').owlCarousel({
+        loop: true,
+        items: 1,
+        margin: 0,
+        autoplay: true,
+        autoplayTimeout: 3333,
+        autoplayHoverPause: true,
+    })
+
+// GSAP flip animation
+     gsap.to(".subdata p", {
+                rotationX: 0,
+                opacity: 1,
+                duration: 0.5,
+                stagger: 0.5,
+                ease: "power2.inOut",
+            });
+    gsap.to(".data p", {
+                rotationX: 0,
+                opacity: 1,
+                duration: 0.5,
+                stagger: 0.5,
+                ease: "power2.inOut",
+            });
+            
+   </script>
+</body>
+</html>
