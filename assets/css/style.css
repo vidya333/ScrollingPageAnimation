@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -6,6 +7,24 @@
   font-family:"Nunito Sans", sans-serif;
   transition: all 0.7s;
 }
+
+.animate__flipInX {
+  animation-name: flipInX;
+  animation-duration: 1s; /* Adjust duration as needed */
+  animation-timing-function: linear; /* Change timing function to linear */
+}
+
+@keyframes flipInX {
+  from {
+      transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      transition-timing-function: ease-in;
+      opacity: 0;
+  }
+  to {
+      transform: perspective(400px);
+  }
+}
+
 .bg-purple{
   background-color: #4E27CE;
 }

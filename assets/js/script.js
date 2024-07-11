@@ -1,7 +1,7 @@
 // Progress circle for actual progress
 let progressCircle = document.querySelector(".progress");
 let radius = progressCircle.r.baseVal.value;
-let circumference = radius * 2 * Math.PI;
+let circumference = radius * 2 * Math.PI; 
 progressCircle.style.strokeDasharray = circumference;
 
 function setProgress(percent) {
@@ -49,6 +49,14 @@ window.addEventListener('scroll', () => {
     }
 });
 
+function addFlipInXAnimation(element) {
+    element.classList.remove("animate__animated", "animate__flipInX"); 
+    element.style.animationDuration = "0.6s"; 
+    void element.offsetWidth; 
+    element.classList.add("animate__animated", "animate__flipInX");
+}
+
+
 function sliderOne() {
     setProgress(0);
     $(".dot-1").css("fill", "#7252da");
@@ -61,6 +69,11 @@ function sliderOne() {
     $(".subheading").html("on appstore and google playstore").css("translate", "-60px");
     $(".optional").css("visibility", "hidden");
     $(".heading1").html("ABC 123");
+
+    addFlipInXAnimation(document.querySelector(".heading"));
+    addFlipInXAnimation(document.querySelector(".subheading"));
+    addFlipInXAnimation(document.querySelector(".optional"));
+    addFlipInXAnimation(document.querySelector(".subdata"));
 
     $(".slide1-img2").css("margin-top", "400px");
     $(".slide1-img1").css("margin-top", "0px");
@@ -92,6 +105,11 @@ function sliderTwo() {
     $(".optional").css("visibility", "visible").html("The Next Big");
     $(".heading1").html("ABC 234");
 
+    addFlipInXAnimation(document.querySelector(".heading"));
+    addFlipInXAnimation(document.querySelector(".subheading"));
+    addFlipInXAnimation(document.querySelector(".optional"));
+    addFlipInXAnimation(document.querySelector(".subdata"));
+
     $(".bg-darkblue").css("background-color", "lightgray");
     $(".layer-1, .layer-2").css("background-color", "#4E27CE");
 
@@ -117,6 +135,11 @@ function sliderThree() {
     $(".heading").html("UX Strategy").css("translate", "150px");
     $(".subheading").html("and UI Design").css("translate", "200px");
     $(".heading1").html("ABC 345");
+
+    addFlipInXAnimation(document.querySelector(".heading"));
+    addFlipInXAnimation(document.querySelector(".subheading"));
+    addFlipInXAnimation(document.querySelector(".optional"));
+    addFlipInXAnimation(document.querySelector(".subdata"));
 
     $(".bg-darkblue").css("background-color", "#0f113b");
     $(".layer-1, .layer-2").css("background-color", "#17263c");
@@ -148,6 +171,11 @@ function sliderFour() {
     $(".subheading").html("Algorithms");
     $(".heading1").html("ABC 456");
 
+    addFlipInXAnimation(document.querySelector(".heading"));
+    addFlipInXAnimation(document.querySelector(".subheading"));
+    addFlipInXAnimation(document.querySelector(".optional"));
+    addFlipInXAnimation(document.querySelector(".subdata"));
+
     $(".bg-darkblue").css("background-color", "#362072");
     $(".layer-1, .layer-2").css("background-color", "#0f113b");
 
@@ -174,6 +202,11 @@ function sliderFive() {
     $(".heading").html("Text Headline").css("translate", "100px");
     $(".subheading").html("Footer Headline").css("translate", "200px");
     $(".heading1").html("ABC 567");
+
+    addFlipInXAnimation(document.querySelector(".heading"));
+    addFlipInXAnimation(document.querySelector(".subheading"));
+    addFlipInXAnimation(document.querySelector(".optional"));
+    addFlipInXAnimation(document.querySelector(".subdata"));
 
     $(".bg-darkblue").css("background-color", "aquamarine");
     $(".layer-1, .layer-2").css("background-color", "#134ca2");
@@ -203,6 +236,11 @@ function sliderSix() {
     $(".subheading").html("In Future Industry").css("translate", "200px");
     $(".heading1").html("ABC 678");
 
+    addFlipInXAnimation(document.querySelector(".heading"));
+    addFlipInXAnimation(document.querySelector(".subheading"));
+    addFlipInXAnimation(document.querySelector(".optional"));
+    addFlipInXAnimation(document.querySelector(".subdata"));
+
     $(".bg-darkblue").css("background-color", "lightgray");
     $(".layer-1, .layer-2").css("background-color", "#134ca2");
 
@@ -228,6 +266,11 @@ function sliderSeven(){
     document.querySelector(".dot-5").style.fill="#7252da";
     document.querySelector(".dot-6").style.fill="#7252da";
     document.querySelector(".dot-7").style.fill="#7252da";
+
+    addFlipInXAnimation(document.querySelector(".heading"));
+    addFlipInXAnimation(document.querySelector(".subheading"));
+    addFlipInXAnimation(document.querySelector(".optional"));
+    addFlipInXAnimation(document.querySelector(".subdata"));
 
     document.querySelector(".optional").style.visibility="visible";
     document.querySelector(".optional").innerHTML="Biggest Classifieds";
